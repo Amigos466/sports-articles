@@ -1,0 +1,17 @@
+{
+    "name": "sports-articles",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "pnpm -r --parallel run dev",
+        "dev:backend": "pnpm --filter backend dev",
+        "dev:frontend": "pnpm --filter frontend dev",
+        "build": "pnpm -r run build",
+        "seed": "pnpm --filter backend seed"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0",
+        "eslint": "^8.0.0",
+        "prettier": "^3.0.0"
+    }
+}
