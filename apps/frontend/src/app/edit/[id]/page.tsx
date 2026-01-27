@@ -1,4 +1,5 @@
 "use client";
+// No sense to make this page server side, because it only for modification functionality
 
 import { useMutation, useQuery } from "@apollo/client";
 import { GET_ARTICLE, UPDATE_ARTICLE } from "@/lib/queries";

@@ -1,4 +1,5 @@
 "use client";
+// No sense to make this page server side, because it only for creation functionality
 
 import { useMutation } from "@apollo/client";
 import { CREATE_ARTICLE } from "@/lib/queries";
@@ -35,7 +36,7 @@ export default function CreateArticle() {
             <Link href="/" className="text-muted-foreground hover:text-foreground mb-6 inline-flex items-center text-sm font-medium transition-colors">
                 &larr; Back to List
             </Link>
-            <h1 className="text-3xl font-bold mb-8 tracking-tight">CREATE_NEW_ARTICLE</h1>
+            <h1 className="text-3xl font-bold mb-8 tracking-tight">Create New Article</h1>
 
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
