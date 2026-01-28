@@ -7,7 +7,7 @@ export function ApolloWrapper({ children }: { children: React.ReactNode }) {
     const client = useMemo(() => {
         return new ApolloClient({
             link: new HttpLink({
-                uri: "http://localhost:4000/graphql",
+                uri: "http://localhost:4002/graphql",
             }),
             cache: new InMemoryCache(),
         });
