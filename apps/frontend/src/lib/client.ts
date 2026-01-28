@@ -5,7 +5,7 @@ export const getClient = () => {
         query: async ({ query, variables }: { query: any; variables?: any }) => {
             const queryString = print(query);
 
-            const res = await fetch("http://localhost:4002/graphql", {
+            const res = await fetch(process.env.NEXT_PUBLIC_API_URL || "http://localhost:4002/graphql", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
