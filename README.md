@@ -22,15 +22,21 @@ cd sports-articles
 docker-compose up -d
 pnpm install
 pnpm seed
+```
 
 ### 2.Run locally
+```bash
 pnpm dev
+```
 
 ### 3.Run production
+```bash
 pnpm build
 pnpm start
+```
 
 ### 4.Run separately
+```bash
 pnpm --filter backend dev
 pnpm --filter frontend dev
 ```
