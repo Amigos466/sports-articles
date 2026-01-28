@@ -19,7 +19,7 @@ Clone the repository and install dependencies from the root:
 ```bash
 git clone https://github.com/Amigos466/sports-articles.git
 cd sports-articles
-docker-compose up -d
+docker compose up -d #or docker-compose up -d
 pnpm install
 pnpm seed
 ```
