@@ -32,7 +32,7 @@ export default function CreateArticle() {
     };
 
     return (
-        <div className="p-8 max-w-2xl mx-auto py-16">
+        <div className="p-4 sm:p-8 max-w-2xl mx-auto py-8 sm:py-16">
             <Link href="/" className="text-muted-foreground hover:text-foreground mb-6 inline-flex items-center text-sm font-medium transition-colors">
                 &larr; Back to List
             </Link>

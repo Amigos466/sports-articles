@@ -16,7 +16,7 @@ interface ArticleItemProps {
 
 export default function ArticleItem({ article, onDelete }: ArticleItemProps) {
     return (
-        <article className="group relative flex flex-col p-8 rounded-2xl border border-border/50 bg-background/50 hover:bg-border/30 transition-all duration-300 hover:-translate-y-1">
+        <article className="group relative flex flex-col p-6 sm:p-8 rounded-2xl border border-border/50 bg-background/50 hover:bg-border/30 transition-all duration-300 hover:-translate-y-1">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
             <div className="flex justify-between items-start mb-6">
@@ -51,7 +51,7 @@ export default function ArticleItem({ article, onDelete }: ArticleItemProps) {
 
             <div className="mt-auto pt-6 border-t border-border/50 flex justify-between items-center text-xs font-mono text-muted-foreground">
                 <span>READ_MORE_&gt;</span>
-                <span className="group-hover:text-primary transition-colors">ID: {article.id.slice(0, 8)}</span>
+                <span className="hidden sm:inline group-hover:text-primary transition-colors">ID: {article.id.slice(0, 8)}</span>
             </div>
         </article>
     );
